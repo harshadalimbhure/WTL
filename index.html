@@ -3,44 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clothing Store</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Header styles */
+        header {
+            background-color: #333;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        .logo h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Home section styles */
+        .home-section {
+            background: #f2f2f2;
+            text-align: center;
+            padding: 50px 0;
+        }
+        .home-section .banner h2 {
+            font-size: 36px;
+            color: #333;
+        }
+        .home-section .banner p {
+            font-size: 18px;
+            color: #777;
+        }
+        .cta-btn {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Menu section styles */
+        .menu-section {
+            padding: 50px 0;
+            text-align: center;
+            background-color: #e9ecef;
+        }
+        .menu-section h2 {
+            font-size: 30px;
+        }
+        .menu-items {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .menu-item {
+            width: 200px;
+            text-align: center;
+        }
+        .menu-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Gallery section styles */
+        .gallery-section {
+            padding: 50px 0;
+        }
+        .gallery-items {
+            display: flex;
+            justify-content: space-around;
+        }
+        .gallery-item img {
+            width: 200px;
+            border-radius: 8px;
+        }
+
+        /* About Us section styles */
+        .about-us-section {
+            padding: 50px 0;
+            background-color: #f2f2f2;
+        }
+        .about-us-section h2 {
+            font-size: 30px;
+            text-align: center;
+        }
+        .about-us-section p {
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-    <div class="calculator-container">
-        <h2>Calculator</h2>
-        <form id="calculatorForm">
-            <div class="form-group">
-                <label for="display">Display</label>
-                <input type="text" id="display" name="display" placeholder="0" disabled>
-            </div>
-            <div class="button-container">
-                <button type="button" class="button" onclick="appendToDisplay('7')">7</button>
-                <button type="button" class="button" onclick="appendToDisplay('8')">8</button>
-                <button type="button" class="button" onclick="appendToDisplay('9')">9</button>
-                <button type="button" class="button" onclick="appendToDisplay('+')">+</button>
-            </div>
-            <div class="button-container">
-                <button type="button" class="button" onclick="appendToDisplay('4')">4</button>
-                <button type="button" class="button" onclick="appendToDisplay('5')">5</button>
-                <button type="button" class="button" onclick="appendToDisplay('6')">6</button>
-                <button type="button" class="button" onclick="appendToDisplay('-')">-</button>
-            </div>
-            <div class="button-container">
-                <button type="button" class="button" onclick="appendToDisplay('1')">1</button>
-                <button type="button" class="button" onclick="appendToDisplay('2')">2</button>
-                <button type="button" class="button" onclick="appendToDisplay('3')">3</button>
-                <button type="button" class="button" onclick="appendToDisplay('*')">*</button>
-            </div>
-            <div class="button-container">
-                <button type="button" class="button" onclick="appendToDisplay('0')">0</button>
-                <button type="button" class="button" onclick="clearDisplay()">C</button>
-                <button type="button" class="button" onclick="calculateResult()">=</button>
-                <button type="button" class="button" onclick="appendToDisplay('/')">/</button>
-            </div>
-        </form>
-    </div>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Fashion Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about-us">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <script src="scripts.js"></script>
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="banner">
+            <h2>Welcome to Our Clothing Store</h2>
+            <p>Discover your new favorite outfits</p>
+            <a href="#menu" class="cta-btn" style="color: #fff;">Shop Now</a> <!-- Inline CSS for the 'Shop Now' button -->
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2>Our Products</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?q=80&w=1707&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Men's Clothing">
+                <h3>Men's Clothing</h3>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWV7AvkIBphwYg9c2aHiGaJiw7FOKQWpBTRA&s" alt="Women's Clothing">
+                <h3>Women's Clothing</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2>Our Gallery</h2>
+        <div class="gallery-items">
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7bH47ObZ1fPdpHZI7VaG-Qsj_zLc7zX9b5Q&s" alt="Product 1">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/474x/6c/43/c3/6c43c36565556b714073e15432aa33da.jpg" alt="Product 2">
+            </div>
+            <div class="gallery-item">
+                <img src="https://img.freepik.com/free-photo/woman-posing-stylish-summer-fashion-bag-colorful-mood_285396-3010.jpg?ga=GA1.1.1316815500.1738044186&semt=ais_hybrid" alt="Product 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+     <!--Inline css-->
+    
+    <section id="about-us" class="about-us-section">
+        <h2>About Us</h2>
+        <p style="color: rgb(224, 99, 22);">We are a fashion brand dedicated to offering the best in quality and style.We are a leading fashion brand committed to providing the latest trends and timeless styles for all your wardrobe needs</p>
+    </section>
+    
+    
+
+    
+
+
 </body>
 </html>

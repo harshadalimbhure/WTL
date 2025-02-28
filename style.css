@@ -1,0 +1,46 @@
+<style>
+    /* General box styles */
+    .box {
+        border: 2px solid #333; /* Add border to create a box */
+        padding: 20px; /* Space inside the box */
+        margin: 20px 0; /* Space outside the box */
+        border-radius: 8px; /* Rounded corners */
+    }
+
+    /* Box for menu items */
+    .menu-item {
+        width: 200px;
+        text-align: center;
+        background-color: #f9f9f9; /* Light background for menu items */
+        border-radius: 8px; /* Optional rounded corners */
+        padding: 15px; /* Add padding inside each menu item box */
+        border: 1px solid #ddd; /* Add border around each menu item */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add slight shadow */
+    }
+
+    /* Box for gallery items */
+    .gallery-item {
+        width: 220px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow around gallery box */
+    }
+
+    /* Box for About Us section */
+    .about-us-section {
+        background-color: #f2f2f2;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    /* Optional: Adding box shadow to the home banner */
+    .home-section .banner {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
+    }
+
+</style>
