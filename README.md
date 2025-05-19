@@ -1,59 +1,32 @@
-# Form
+# Web-Technology
+<h3>Title:1 </h3>
+ Before coding of the website, planning is important, students should visit different websites (Min. 5) for the 
+different client projects and note down the evaluation results for these websites, either good website or bad 
+website
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
+<h3>Title:2 </h3>
+ Implement a web page index.html for any client website (e.g., a mobile shop website, Educational 
+website or Clothes shop website) using following:  <br/>
+a) HTML syntax: heading tags, basic tags and attributes, frames, tables, images, lists, links for text 
+and images, forms etc. <br/>
+b) Use of Internal CSS, Inline CSS, External CSS.
 
-## Development server
+<h3>Title:3 </h3>
+ Implement an application in Java Script using following:  <br/>
+a) Design UI of application using HTML, CSS etc.  <br/>
+b) Include Java script validation  <br/>
+c) Use of prompt and alert window using Java Script  <br/>
+e.g., Design and implement a simple calculator using Java Script for operations like addition, 
+multiplication, subtraction, division, square of number etc.  <br/>
+a) Design calculator interface like text field for input and output, buttons for numbers and operators etc. <br/> 
+b) Validate input values  <br/>
+c) Prompt/alerts for invalid values etc. <br/>
 
-To start a local development server, run:
+<h3>Title:4 </h3>
+ Design an application using Angular JS.   <br/>
+e.g., Design registration (first name, last name, username, password) and login page using Angular JS.
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+<h3>Title:3 </h3>
+ Implement the sample program demonstrating the use of Servlet.  
+e.g., Create a database table ebookshop (book_id, book_title, book_author, book_price, quantity) using 
+database like Oracle/MySQL etc. update and display (use SQL select query) the table content using servlet.
